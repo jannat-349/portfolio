@@ -22,4 +22,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        run: |
+          git config --global user.email "jucse28.349@gmail.com"
+          git config --global user.name "jannat-349"
+          

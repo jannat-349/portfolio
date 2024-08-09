@@ -1,9 +1,25 @@
-function App() {
-  return (
-    <div>Hello guys! This is me Jannatul. Happy to see you!
-      <div>I need to make a personal website as soon as possible!! hehe</div>
-    </div>
-  )
-}
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
-export default App
+const App = () => {
+  return (
+    <Router basename="/portfolio">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
+
+export default App;

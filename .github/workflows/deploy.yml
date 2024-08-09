@@ -27,5 +27,5 @@ jobs:
         run: |
           git config --global user.email "jucse28.349@gmail.com"
           git config --global user.name "jannat-349"
-          npm install ghp-import
+          pip install ghp-import
           ghp-import -n -p -f dist

@@ -87,7 +87,7 @@ const About = () => {
             <h3>
               Executive Member
             </h3>
-            <p className="duration">Jan 2023 - Present</p>
+            <p className="duration">Jan 2023 - April 2024</p>
           </div>
           <a href="https://jurc.org/" target="_blank" rel="noopener noreferrer">
             <p>Jahangirnagar University Robotics Club</p></a>

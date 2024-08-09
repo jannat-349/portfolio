@@ -1,21 +1,39 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/my_photo.jpg';
+import '../styles/Header.css';
 
 const Header = () => {
-  return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" style={{ flexGrow: 1 }}>
-          Jannatul's Portfolio
-        </Typography>
-        <Button color="inherit" component={NavLink} to="/">Home</Button>
-        <Button color="inherit" component={NavLink} to="/about">About</Button>
-        <Button color="inherit" component={NavLink} to="/projects">Projects</Button>
-        <Button color="inherit" component={NavLink} to="/contact">Contact</Button>
-      </Toolbar>
-    </AppBar>
-  );
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    return (
+        <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+            <Link to="/">
+                <img src={logo} alt="Logo" className="logo" />
+            </Link>
+            <nav className="nav-menu">
+                <Link to="/" className="nav-link"><i className="fas fa-home"></i> Home</Link>
+                <Link to="/about" className="nav-link"><i className="fas fa-user"></i> About</Link>
+                <Link to="/projects" className="nav-link"><i className="fas fa-briefcase"></i> Projects</Link>
+                <Link to="/researches" className="nav-link"><i className="fas fa-file-alt"></i> Researches</Link>
+                <Link to="/achievements" className="nav-link"><i className="fas fa-trophy"></i> Achievements</Link>
+            </nav>
+        </header>
+    );
 };
 
 export default Header;

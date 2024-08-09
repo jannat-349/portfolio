@@ -1,0 +1,87 @@
+.footer {
+    background-color: rgb(50, 50, 82);
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links,
+.contact-info {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.social-links a,
+.contact-info p {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 40px; /* Increase size */
+    height: 40px;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+/* Specific icon colors */
+.linkedin-icon {
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+.github-icon {
+    filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.facebook-icon {
+    filter: invert(26%) sepia(100%) saturate(585%) hue-rotate(199deg) brightness(97%) contrast(95%);
+}
+
+.contact-info {
+    flex-direction: column;
+    align-items: flex-end; /* Align contact info to the right */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: white; /* Set text color */
+}
+
+.contact-icon {
+    margin-right: 8px;
+    font-size: 24px; /* Increase size */
+}
+
+/* Specific contact icon colors */
+.phone-icon {
+    color: #4CAF50; /* Green */
+}
+
+.email-icon {
+    color: #FFC107; /* Amber */
+}
+
+.address-icon {
+    color: #2196F3; /* Blue */
+}
+
+.copy {
+    font-size: 14px;
+    color: white;
+}
+.contact-link {
+    color: white; /* Ensure text color matches the footer */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Add an underline on hover for better visibility */
+}

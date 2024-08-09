@@ -1,0 +1,147 @@
+/* Keyframe Animations */
+@keyframes fly {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(50px) translateY(-20px) rotate(10deg);
+    }
+    100% {
+        transform: translateX(100px) translateY(-40px) rotate(20deg);
+    }
+}
+
+@keyframes typing {
+    0% {
+        content: '|';
+    }
+    50% {
+        content: '|';
+    }
+    100% {
+        content: '';
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+/* Home Component Styles */
+.home {
+    position: relative;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+}
+
+.main-content {
+    text-align: center;
+    width: 80vw;
+}
+
+.bio {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.bold-white {
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.border-white {
+    color: transparent;
+    font-weight: bold;
+    -webkit-text-stroke: 1px white;
+    display: block;
+}
+
+.fly-icon {
+    display: inline-block;
+    animation: fly 2s ease-in-out infinite;
+    margin-left: 10px;
+    font-size: 0.8em;
+    position: relative;
+}
+
+.typing-icon {
+    display: inline-block;
+    animation: typing 1s steps(1, end) infinite;
+    margin-left: 10px;
+    font-size: 0.8em;
+    position: relative;
+}
+
+.move-icon {
+    display: inline-block;
+    animation: move 2s ease-in-out infinite;
+    margin-left: 10px;
+    font-size: 0.8em;
+    position: relative;
+}
+
+/* Button Styles */
+.button-container {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+    background-color: #2196F3; /* Blue */
+}
+
+.btn-secondary {
+    background-color: #FF5722; /* Deep Orange */
+}
+
+.btn-primary:hover {
+    background-color: #0b79d0; /* Darker blue */
+    transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+    background-color: #e64a19; /* Darker deep orange */
+    transform: scale(1.05);
+}

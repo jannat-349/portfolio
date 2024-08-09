@@ -1,22 +1,36 @@
 import React from 'react';
-import { Container, Typography, Box, Button } from '@mui/material';
+import Carousel from '../components/Carousel';
+import '../styles/Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-  return (
-    <Container>
-      <Box my={5}>
-        <Typography variant="h3" gutterBottom>
-          Hello Everyone!
-        </Typography>
-        <Typography variant="h6" gutterBottom>
-          I am a Junior SQA Engineer at Dynamic Solution Innovators Ltd.
-        </Typography>
-        <Button variant="contained" color="primary" href="/projects">
-          View My Work
-        </Button>
-      </Box>
-    </Container>
-  );
+    return (
+        <div className="home">
+            <Carousel />
+            <div className="overlay">
+                <main className="main-content">
+                    <h1 className="bio">
+                        <span className="bold-white">
+                            Hey!! I'm Jannatul, a passionate learner who enjoys leading in various tasks,
+                            from crafting paper planes 
+                            <i className="fas fa-paper-plane fly-icon"></i>
+                            to programming computers 
+                            <i className="fas fa-desktop typing-icon"></i>
+                        </span>
+                        <span className="border-white">
+                            I also dream of flying on a plane one day,
+                            just as I enjoy riding my bicycle 
+                            <i className="fas fa-bicycle move-icon"></i>
+                        </span>
+                    </h1>
+                    <div className="button-container">
+                        <Link to="/about" className="btn btn-primary">More About Me</Link>
+                        <Link to="/researches" className="btn btn-secondary">My Research Works</Link>
+                    </div>
+                </main>
+            </div>
+        </div>
+    );
 };
 
 export default Home;

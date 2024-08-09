@@ -1,49 +1,19 @@
-@keyframes fly {
-    0% {
-        transform: translateX(0) rotate(0deg);
-    }
-    50% {
-        transform: translateX(50px) translateY(-20px) rotate(10deg);
-    }
-    100% {
-        transform: translateX(100px) translateY(-40px) rotate(20deg);
-    }
-}
-
-@keyframes typing {
-    0% {
-        content: '|';
-    }
-    50% {
-        content: '|';
-    }
-    100% {
-        content: '';
-    }
-}
-
-@keyframes move {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-    100% {
-        transform: translateX(20px);
-    }
-}
-
 .home {
     position: relative;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .carousel {
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure carousel is behind the overlay */
 }
 
 .overlay {
@@ -52,18 +22,25 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    z-index: 1;
+    z-index: 1; /* Ensure overlay is above the carousel */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .main-content {
     text-align: center;
     width: 80vw;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3); /* Optional background for readability */
+    border-radius: 10px; /* Optional rounded corners */
 }
 
 .bio {
@@ -91,7 +68,7 @@
     display: inline-block;
     animation: fly 2s ease-in-out infinite;
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative;
 }
 
@@ -99,7 +76,7 @@
     display: inline-block;
     animation: typing 1s steps(1, end) infinite;
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative;
 }
 
@@ -107,12 +84,13 @@
     display: inline-block;
     animation: move 2s ease-in-out infinite;
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: relative;
 }
 
 .button-container {
     margin-top: 20px;
+    z-index: 2;
 }
 
 .btn {
@@ -142,4 +120,43 @@
 .btn-secondary:hover {
     background-color: #e64a19;
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 50vh; /* Adjust height for smaller screens */
+    }
+
+    .overlay {
+        top: 50vh; /* Adjust according to the carousel height */
+    }
+
+    .bio {
+        font-size: 1.5rem;
+    }
+
+    .fly-icon, .typing-icon, .move-icon {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .bio {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
 }

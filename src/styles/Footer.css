@@ -11,7 +11,6 @@
 .social-links,
 .contact-info {
     display: flex;
-    justify-content: right;
     gap: 20px;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .social-icon {
-    width: 40px; /* Increase size */
+    width: 40px;
     height: 40px;
     transition: opacity 0.3s;
 }
@@ -32,7 +31,6 @@
     opacity: 0.7;
 }
 
-/* Specific icon colors */
 .linkedin-icon {
     filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg) brightness(100%) contrast(100%);
 }
@@ -47,41 +45,71 @@
 
 .contact-info {
     flex-direction: column;
-    align-items: flex-end; /* Align contact info to the right */
+    align-items: flex-end;
 }
 
 .contact-info p {
     margin: 5px 0;
-    color: white; /* Set text color */
+    color: white;
 }
 
 .contact-icon {
     margin-right: 8px;
-    font-size: 24px; /* Increase size */
+    font-size: 24px;
 }
 
-/* Specific contact icon colors */
 .phone-icon {
-    color: #4CAF50; /* Green */
+    color: #4CAF50;
 }
 
 .email-icon {
-    color: #FFC107; /* Amber */
+    color: #FFC107;
 }
 
 .address-icon {
-    color: #2196F3; /* Blue */
+    color: #2196F3;
 }
 
 .copy {
     font-size: 14px;
     color: white;
 }
+
 .contact-link {
-    color: white; /* Ensure text color matches the footer */
+    color: white;
     text-decoration: none;
 }
 
 .contact-link:hover {
-    text-decoration: underline; /* Add an underline on hover for better visibility */
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-icon {
+        font-size: 20px;
+    }
+
+    .copy {
+        font-size: 12px;
+    }
 }

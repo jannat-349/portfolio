@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(65, 60, 88, 0.6); /* Semi-transparent background */
+    color: white;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    left: 0;
+    transition: background-color 0.3s, opacity 0.3s; /* Smooth transitions */
+    opacity: 1; /* Default opacity */
+}
+
+.header.scrolled {
+    background-color: rgb(50, 50, 82); /* Opaque background when scrolled */
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px; /* Adjust the spacing between the links as needed */
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-menu a:hover {
+    color: #f0f0f0; /* Change to a lighter color on hover */
+}
+
+.nav-menu i {
+    margin-right: 8px;
+    font-size: larger; /* Adjust icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Specific icon colors */
+.nav-menu i.fa-home {
+    color: #4CAF50; /* Green */
+}
+
+.nav-menu i.fa-user {
+    color: #2196F3; /* Blue */
+}
+
+.nav-menu i.fa-briefcase {
+    color: #FFC107; /* Amber */
+}
+
+.nav-menu i.fa-file-alt {
+    color: #FF5722; /* Deep Orange */
+}
+
+.nav-menu i.fa-trophy {
+    color: #9C27B0; /* Purple */
+}

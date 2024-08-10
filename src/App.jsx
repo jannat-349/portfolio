@@ -13,12 +13,14 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Researches from './pages/Researches';
 import Achievements from './pages/Achievements';
+import ScrollToTop from './components/ScrollToTop';
 
 
 const App = () => {
   return (
     <Router basename="/portfolio">
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

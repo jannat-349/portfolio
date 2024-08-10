@@ -63,11 +63,11 @@ const About = () => {
 
           <div className="images-container">
             <div className="image-item">
-              <img src="src/assets/images/day.jpeg" alt="What I do at day" />
+              <img src="images/day.jpeg" alt="What I do at day" />
               <p><em>What I do during the day</em></p>
             </div>
             <div className="image-item">
-              <img src="src/assets/images/night.jpg" alt="What I do at night" />
+              <img src="images/night.jpg" alt="What I do at night" />
               <p><em>What I do at night</em></p>
             </div>
           </div>

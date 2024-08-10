@@ -14,6 +14,7 @@ import Projects from './pages/Projects';
 import Researches from './pages/Researches';
 import Achievements from './pages/Achievements';
 import ScrollToTop from './components/ScrollToTop';
+import ErrorPage from './components/ErrorPage';
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/researches" element={<Researches />} />
         <Route path="/achievements" element={<Achievements />} />
+        <Route path="*" element={<ErrorPage />} />
         
       </Routes>
       <Footer />

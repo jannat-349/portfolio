@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=/#/404">
     <title>Redirecting...</title>
     <script type="text/javascript">
+        // Redirects to the correct URL path, ensuring React Router can handle it
         var redirectTo = window.location.pathname.split('/').slice(2).join('/');
-        window.location.replace('/portfolio/' + redirectTo);
+        if (!window.location.hash) {
+            window.location.href = '/portfolio/#/' + redirectTo;
+        }
     </script>
 </head>
 <body>
+    <p>If you are not redirected automatically, <a href="/portfolio/">click here</a>.</p>
 </body>
 </html>

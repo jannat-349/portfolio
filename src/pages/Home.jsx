@@ -14,8 +14,8 @@ const Home = () => {
                             Hey!! I'm Jannatul, a passionate learner who enjoys leading in various tasks,
                             from crafting paper planes 
                             <i className="fas fa-paper-plane fly-icon"></i>
-                            to programming computers 
-                            <i className="fas fa-desktop typing-icon"></i>
+                            to programming computers
+                            <i className="fas fa-desktop typing-icon"></i>. <br />  
                         </span>
                         <span className="border-white">
                             I also dream of flying on a plane one day,

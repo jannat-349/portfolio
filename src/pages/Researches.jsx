@@ -47,7 +47,7 @@ const Researches = () => {
     return (
         <div className="researches-container">
             <section>
-                <h2>Researches</h2>
+                <h2>My Research Works</h2>
                 <div className="research-grid">
                     {researchPapers.map((paper, index) => (
                         <div className="research-item" key={index}>

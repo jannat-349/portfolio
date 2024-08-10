@@ -5,7 +5,7 @@ const Achievements = () => {
     return (
         <div className="achievements-container">
             <section>
-                <h2>Achievements</h2>
+                <h2>My Achievements</h2>
                 <div className="achievements-list">
                     <div className="achievement-item">
                         <h3>Leetcode Solutions</h3>

@@ -5,7 +5,6 @@ import EMSVideo from '../assets/videos/MERN project.mp4';
 
 import ReactPlayer from 'react-player';
 
-
 const projects = [
     {
         title: "Extracting Mode of Optical Fiber",
@@ -14,7 +13,7 @@ const projects = [
         description: [
             "Research project to solve the modal equation of optical fiber that ensures maximum light passing using two evolutionary algorithms: PSO and GA."
         ],
-        imageUrl: 'src/assets/images/optical_fiber.png',
+        imageUrl: 'images/optical_fiber.png',
         codeLink: null,
         visitLink: null,
         pdfLink: "https://drive.google.com/file/d/1WL2EM3N4rOqaXmVLx9OHvAZ0Aehn4oh1/view"
@@ -27,7 +26,7 @@ const projects = [
             "Implemented XGBoost algorithm for stroke prediction with accuracy 95% and processed dataset with SMOTE algorithm.",
             "Applied cross-validation and confusion matrix analysis for better performance."
         ],
-        imageUrl: 'src/assets/images/stroke.jpeg',
+        imageUrl: 'images/stroke.jpeg',
         codeLink: "https://github.com/jannat-349/ML-Lab-codes/tree/stroke-prediction-project-XGBoost",
         visitLink: null,
         pdfLink: "https://drive.google.com/file/d/1M3GqiRSR0SFCsx-g119tbdh_uODJr4CV/view"
@@ -41,7 +40,7 @@ const projects = [
             "Working on Payment feature development: Advance payment, Monthly payment, EMI payment.",
             "Collaborating with team members in GitHub, Discord, Trello, Notion."
         ],
-        imageUrl: 'src/assets/images/dhar_hobe.png',
+        imageUrl: 'images/dhar_hobe.png',
         codeLink: "https://github.com/JU-High-Fives/Dhar-Hobe/tree/rent_jannat",
         visitLink: null,
         pdfLink: "https://drive.google.com/file/d/1QU38x3WOQgVEv8AWe-R_dqjrQBgHxLBo/view"
@@ -55,7 +54,7 @@ const projects = [
             "Applied authentication using JWToken library.",
             "Used Material-UI library and implemented dockerization."
         ],
-        imageUrl: 'src/assets/images/ems.png',
+        imageUrl: 'images/ems.png',
         codeLink: "https://github.com/jannat-349/MERN-Final-Project",
         visitLink: null,
         pdfLink: "https://docs.google.com/presentation/d/1tvv7ZV6h-eAEFIdW2e3szmZmb5UfQHVip8hw0vZLIwg/edit?usp=sharing",
@@ -70,7 +69,7 @@ const projects = [
             "Published in github pages.",
             "Implemented CICD through Github Actions."
         ],
-        imageUrl: 'src/assets/images/portfolio.png',
+        imageUrl: 'images/portfolio.png',
         codeLink: "https://github.com/jannat-349/portfolio",
         visitLink: "https://jannat-349.github.io/portfolio",
         pdfLink: null
@@ -84,13 +83,12 @@ const projects = [
             "Users can pay through the Android app, TapLock, to retrieve their belongings.",
             "It ensures that only authorized individuals can access the lock and pay for item retrieval."
         ],
-        imageUrl: 'src/assets/images/homepage_bg5.jpeg',
+        imageUrl: 'images/homepage_bg5.jpeg',
         codeLink: "https://github.com/jannat-349/Fingerprint-Based-Locker-System-IoT-Project-",
         visitLink: null,
         pdfLink: "https://drive.google.com/file/d/1ED54y4eRorjCLL9B63Aut2yWwG0Iu37B/view",
         videoUrl: TaplockVideo
     }
-
 ];
 
 const Projects = () => {
@@ -121,7 +119,6 @@ const Projects = () => {
                                             </>
                                         )}
                                     </p>
-
                                 </div>
                                 <div className="project-details">
                                     <ul>
@@ -129,21 +126,22 @@ const Projects = () => {
                                             <li key={idx}>{desc}</li>
                                         ))}
                                     </ul>
-                                    <div className="video-container">
-                                        <ReactPlayer
-                                            url={project.videoUrl}
-                                            controls
-                                            width="100%"
-                                            height="100%"
-                                            style={{ marginTop: '10px' }}
-                                        />
-                                    </div>
+                                    {project.videoUrl && (
+                                        <div className="video-container">
+                                            <ReactPlayer
+                                                url={project.videoUrl}
+                                                controls
+                                                width="100%"
+                                                height="100%"
+                                                style={{ marginTop: '10px' }}
+                                            />
+                                        </div>
+                                    )}
                                     {project.pdfLink && (
                                         <div className="additional-links">
                                             <p><a href={project.pdfLink} target="_blank" rel="noopener noreferrer">Know More →</a></p>
                                         </div>
                                     )}
-
                                 </div>
                             </div>
                         </div>

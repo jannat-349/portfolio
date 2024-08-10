@@ -114,6 +114,62 @@ h2 {
     text-decoration: underline;
 }
 
+/* Styling for project actions */
+.project-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.watch-video {
+    color: #2196F3; /* Changed text color */
+}
+
+.know-more {
+    color: #FF5722; /* Text color for 'Know More' */
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.know-more::after {
+    content: ' →';
+    margin-left: 5px;
+}
+
+.visit-link {
+    color: #4CAF50;
+}
+
+.visit-link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    color: black !important;
+}
+.video-container {
+    margin-top: 10px;
+}
+
+.additional-links {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.additional-links a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.additional-links a:hover {
+    text-decoration: underline;
+}
+
+
 @media (max-width: 1024px) {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);

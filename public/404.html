@@ -5,10 +5,9 @@
     <meta http-equiv="refresh" content="0; url=/#/404">
     <title>Redirecting...</title>
     <script type="text/javascript">
-        // Redirects to the correct URL path, ensuring React Router can handle it
         var redirectTo = window.location.pathname.split('/').slice(2).join('/');
         if (!window.location.hash) {
-            window.location.href = '/portfolio/#/' + redirectTo;
+            window.location.href = '/portfolio/' + redirectTo;
         }
     </script>
 </head>

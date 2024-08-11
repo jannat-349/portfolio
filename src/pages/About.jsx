@@ -14,32 +14,8 @@ const About = () => {
               <p>Jannatul Ferdoush Jannati</p>
             </div>
             <div className="personal-info-item">
-              <h3>Date of Birth: </h3>
-              <p>February 18, 2000</p>
-            </div>
-            <div className="personal-info-item">
-              <h3>Father's Name: </h3>
-              <p>Md. Ali Akbar</p>
-            </div>
-            <div className="personal-info-item">
-              <h3>Mother's Name: </h3>
-              <p>Tahmina Akter</p>
-            </div>
-            <div className="personal-info-item">
-              <h3>Age: </h3>
-              <p>24</p>
-            </div>
-            <div className="personal-info-item">
-              <h3>Gender: </h3>
-              <p>Female</p>
-            </div>
-            <div className="personal-info-item">
               <h3>Nationality: </h3>
               <p>Bangladeshi</p>
-            </div>
-            <div className="personal-info-item">
-              <h3>Religion: </h3>
-              <p>Islam</p>
             </div>
             <div className="personal-info-item">
               <h3>Hobbies: </h3>

@@ -27,19 +27,16 @@ h2 {
 /* Personal Info Styles */
 .personal-info-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .personal-info {
     width: 60%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .personal-info-item {
-    width: 48%;
     margin-bottom: 20px;
 }
 

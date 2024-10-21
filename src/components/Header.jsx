@@ -32,10 +32,10 @@ const Header = () => {
                 <Link to={"/"} className="fancy-name">Jannatul Ferdoush Jannati</Link>
             </div>
             <nav className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-                <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}> Home</Link>
-                <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}> About</Link>
+                <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}> About</Link>
                 <Link to="/projects" className="nav-link" onClick={() => setMenuOpen(false)}> Projects</Link>
                 <Link to="/researches" className="nav-link" onClick={() => setMenuOpen(false)}> Researches</Link>
+                <Link to="/education" className="nav-link" onClick={() => setMenuOpen(false)}> Education</Link>
                 <Link to="/achievements" className="nav-link" onClick={() => setMenuOpen(false)}> Achievements</Link>
             </nav>
             <IconButton

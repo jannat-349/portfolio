@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: rgba(65, 60, 88, 0.6);
+    background-color: rgba(0, 0, 0);
     color: white;
     position: fixed;
     z-index: 1000;
@@ -13,24 +13,36 @@
     opacity: 1;
 }
 
-.header.scrolled {
-    background-color: rgb(50, 50, 82);
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-.logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+.fancy-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: white;
+    font-style: italic;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.fancy-name:hover {
+    color: #879faf;
+    text-decoration: none;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-left: auto;
 }
 
 .nav-link {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
     display: flex;
@@ -39,40 +51,18 @@
 }
 
 .nav-link:hover {
-    color: #f0f0f0;
-}
-
-.nav-link i {
-    margin-right: 8px;
-    font-size: larger;
-}
-
-.nav-link i.fa-home {
-    color: #4CAF50;
-}
-
-.nav-link i.fa-user {
-    color: #2196F3;
-}
-
-.nav-link i.fa-briefcase {
-    color: #9C27B0;
-}
-
-.nav-link i.fa-file-alt {
-    color: #FF5722;
-}
-
-.nav-link i.fa-trophy {
-    color: #FFC107;
+    color: #879faf;
+    text-decoration: none;
 }
 
 .hamburger-menu {
     display: none !important;
     color: white;
+    font-size: 3rem;
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -86,6 +76,9 @@
         width: 200px;
         gap: 10px;
     }
+    .fancy-name {
+        font-size: 2rem;
+    }
 
     .nav-menu.active {
         display: flex;
@@ -93,16 +86,30 @@
 
     .hamburger-menu {
         display: flex !important;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 480px) {
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .logo {
         width: 50px;
         height: 50px;
     }
 
     .nav-link {
-        font-size: 12px;
+        font-size: 1.5rem;
+    }
+
+    .fancy-name {
+        font-size: 1.5rem;
+    }
+    .hamburger-menu {
+        font-size: 2rem;
     }
 }

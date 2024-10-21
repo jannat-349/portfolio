@@ -1,136 +1,101 @@
-@keyframes fly {
-    0% {
-        transform: translateX(0) rotate(0deg);
-    }
-    50% {
-        transform: translateX(50px) translateY(-20px) rotate(10deg);
-    }
-    100% {
-        transform: translateX(100px) translateY(-40px) rotate(20deg);
-    }
-}
-
-@keyframes typing {
-    0% {
-        content: '|';
-    }
-    50% {
-        content: '|';
-    }
-    100% {
-        content: '';
-    }
-}
-
-@keyframes move {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-    100% {
-        transform: translateX(20px);
-    }
-}
+/* Main layout for homepage */
 .home {
-    position: relative;
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-.carousel {
-    width: 100%;
-    height: 100vh; 
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+/* Container for the two sections */
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
+/* Left section containing profile image, social links, and email */
+.left-section {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: white;
-    z-index: 1; 
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center; 
+    margin-right: 40px;
 }
 
-.main-content {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.3); 
-    border-radius: 10px; 
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0077b5; /* LinkedIn blue on hover */
+}
+
+.email-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.email-section a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.email-section a:hover {
+    text-decoration: underline;
+}
+
+/* Right section containing bio and buttons */
+.right-section {
+    flex: 2;
+    text-align: left;
 }
 
 .bio {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 20px 0;
+    margin-bottom: 20px;
     line-height: 1.5;
-    padding-top: 20px;
-}
-
-.bold-white {
-    color: white;
-    font-weight: bold;
-}
-
-.border-white {
-    color: transparent;
-    font-weight: bold;
-    -webkit-text-stroke: 1px white;
-}
-
-.fly-icon {
-    display: inline-block;
-    animation: fly 2s ease-in-out infinite;
-    margin-left: 10px;
-    font-size: 1.5rem;
-}
-
-.typing-icon {
-    display: inline-block;
-    animation: typing 1s steps(1, end) infinite;
-    margin-left: 10px;
-    font-size: 1.5rem;
-}
-
-.move-icon {
-    display: inline-block;
-    animation: move 2s ease-in-out infinite;
-    margin-left: 10px;
-    font-size: 1.5rem;
+    color: #333;
 }
 
 .button-container {
+    display: flex;
+    gap: 10px;
     margin-top: 20px;
 }
 
 .btn {
-    display: inline-block;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     color: white;
     text-decoration: none;
-    margin: 5px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -139,29 +104,35 @@
 }
 
 .btn-secondary {
-    background-color: #FF5722 !important;
+    background-color: #FF5722;
 }
 
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Hover effects for buttons */
 .btn-primary:hover {
     background-color: #0b79d0;
-    transform: scale(1.05);
 }
 
 .btn-secondary:hover {
-    background-color: #e64a19 !important;
-    transform: scale(1.05);
+    background-color: #e64a19;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .overlay {
-        top: 0;
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .bio {
-        font-size: 1.5rem;
-    }
-
-    .fly-icon, .typing-icon, .move-icon {
         font-size: 1.2rem;
     }
 
@@ -172,17 +143,17 @@
 }
 
 @media (max-width: 480px) {
-    .overlay {
-        top: 0; 
-    }
-
-    .main-content {
-        width: 90%;
+    .content-container {
         padding: 10px;
     }
 
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
     .bio {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .btn {

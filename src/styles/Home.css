@@ -61,27 +61,17 @@
     text-align: center;
 }
 
-.email-section a {
-    color: #0077b5;
-    text-decoration: none;
-}
-
-.email-section a:hover {
-    text-decoration: underline;
-}
-
-/* Right section containing bio and buttons */
 .right-section {
     flex: 2;
     text-align: left;
 }
 
 .bio {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1rem;        
+    font-weight: 400;        
     margin-bottom: 20px;
     line-height: 1.5;
-    color: #333;
+    font-family: Arial, Helvetica, sans-serif;                
 }
 
 .button-container {
@@ -94,30 +84,12 @@
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
-    color: white;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn-primary {
-    background-color: #2196F3;
-}
-
-.btn-secondary {
-    background-color: #FF5722;
-}
-
 .btn:hover {
     transform: scale(1.05);
-}
-
-/* Hover effects for buttons */
-.btn-primary:hover {
-    background-color: #0b79d0;
-}
-
-.btn-secondary:hover {
-    background-color: #e64a19;
 }
 
 /* Responsive Adjustments */

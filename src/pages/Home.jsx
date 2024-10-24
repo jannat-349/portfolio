@@ -55,6 +55,7 @@ const Home = () => {
                     <div className="button-container">
                         <Link to="/projects" className="btn">My Projects</Link>
                         <Link to="/researches" className="btn">My Research Works</Link>
+
                     </div>
                 </div>
             </div>

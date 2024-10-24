@@ -37,18 +37,24 @@ const Home = () => {
                 {/* Right Section: Bio */}
                 <div className="right-section">
                     <h1 className="bio">
-                        I am Jannatul, a dedicated and driven professional with a strong focus on technology and continuous learning. Currently, I am employed as an SQA Engineer at <a href="https://www.dsinnovators.com" target="_blank" rel="noopener noreferrer">Dynamic Solution Innovators Ltd.</a>, where I contribute to enhancing software quality and ensuring the delivery of efficient and reliable systems.
+                        Currently, I am employed as an SQA Engineer at <a href="https://www.dsinnovators.com" target="_blank" rel="noopener noreferrer">Dynamic Solution Innovators Ltd.</a>, where I contribute to enhancing software quality and ensuring the delivery of efficient and reliable systems. 
+                        Our team named DPE has their main focus to build <a href="https://ipemis.dpe.gov.bd/" target="_blank" rel="noopener noreferrer">IPEMIS System</a> for ensuring a digital primary education system in Bangladesh.
                         <br></br>
                         <br></br>
-                        I hold a undergraduate degree from Jahangirnagar University, where I cultivated my expertise in computer science and engineering. My academic background has provided me with a solid foundation in areas such as data analysis, problem-solving, and innovative research approaches.
+                        I hold a undergraduate degree majoring in Computer Science and Engineering from <a href="https://ipemis.dpe.gov.bd/" target="_blank" rel="noopener noreferrer">Jahangirnagar University</a>. 
+                        My academic background has provided me with a solid foundation in areas such as data analysis, problem-solving, and innovative research approaches.
                         <br></br>
                         <br></br>
-                        My research interests span a range of cutting-edge technologies, including Artificial Intelligence (AI), Machine Learning (ML), Graph Neural Networks (GNN), and Robotics. I am deeply passionate about exploring these fields and their potential to drive innovation and solve real-world challenges.
+                        My undergraduate research involved solving modal equations using particle swarm optimization (PSO) and genetic algorithms (GA), which implement a metaheuristic approach using soft computing to ensure the successful propagation of light rays through an optical fiber. 
+                        It was conducted under the supervision of Professor <a href="https://juniv.edu/teachers/imdad" target="_blank" rel="noopener noreferrer">Dr. Md. Imdadul Islam</a>.
+                        <br></br>
+                        <br></br>
+                        <div className='researchInterest'>I am a prospective graduate student and my research interests include Artificial Intelligence (AI), Machine Learning (ML), Graph Neural Networks (GNN), Robotics, and Software Engineering.</div>
                     </h1>
 
                     <div className="button-container">
-                        <Link to="/projects" className="btn btn-primary">My Projects</Link>
-                        <Link to="/researches" className="btn btn-secondary">My Research Works</Link>
+                        <Link to="/projects" className="btn">My Projects</Link>
+                        <Link to="/researches" className="btn">My Research Works</Link>
                     </div>
                 </div>
             </div>

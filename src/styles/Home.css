@@ -4,9 +4,17 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
+a {
+    font-weight: bold;
+    text-decoration: none !important;
+}
+.researchInterest {
+    font-weight: bold;
+    color: red;
+}
+
 
 /* Container for the two sections */
 .content-container {
@@ -16,7 +24,7 @@
     align-items: flex-start;
     width: 80%;
     max-width: 1200px;
-    background-color: #fff;
+    background-color: #f4f4f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -53,7 +61,7 @@
 }
 
 .social-icon:hover {
-    color: #0077b5; /* LinkedIn blue on hover */
+    color: #000000;
 }
 
 .email-section {
@@ -81,18 +89,23 @@
 }
 
 .btn {
+    display: inline-block;
+    margin-right: 10px;
     padding: 10px 20px;
-    font-size: 1rem;
+    background-color: white !important;
     border-radius: 5px;
-    text-decoration: none;
+    font-size: 0.9em;
     transition: background-color 0.3s, transform 0.3s;
+    border: #000000;
+    border-width: 1rem;
 }
 
 .btn:hover {
     transform: scale(1.05);
+    background-color: #333 !important;
+    color: white !important;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .content-container {
         flex-direction: column;

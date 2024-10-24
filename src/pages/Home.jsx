@@ -41,7 +41,7 @@ const Home = () => {
                         Our team named DPE has their main focus to build <a href="https://ipemis.dpe.gov.bd/" target="_blank" rel="noopener noreferrer">IPEMIS System</a> for ensuring a digital primary education system in Bangladesh.
                         <br></br>
                         <br></br>
-                        I hold a undergraduate degree majoring in Computer Science and Engineering from <a href="https://ipemis.dpe.gov.bd/" target="_blank" rel="noopener noreferrer">Jahangirnagar University</a>. 
+                        I hold a undergraduate degree majoring in Computer Science and Engineering from <a href="https://juniv.edu/" target="_blank" rel="noopener noreferrer">Jahangirnagar University</a>. 
                         My academic background has provided me with a solid foundation in areas such as data analysis, problem-solving, and innovative research approaches.
                         <br></br>
                         <br></br>

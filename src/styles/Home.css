@@ -3,30 +3,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    height: 100vh;
+    padding: 20px; /* Add some padding for smaller screens */
+    box-sizing: border-box; /* Ensure padding is included in height calculations */
 }
-=======
-=======
->>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
-    font-family: Arial, sans-serif;
-}
+
 a {
     font-weight: bold;
     text-decoration: none !important;
 }
+
 .researchInterest {
     font-weight: bold;
     color: red;
 }
-
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
 
 /* Container for the two sections */
 .content-container {
@@ -36,15 +28,7 @@ a {
     align-items: flex-start;
     width: 80%;
     max-width: 1200px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     background-color: #fff;
-=======
-    background-color: #f4f4f9;
->>>>>>> develop
-=======
-    background-color: #f4f4f9;
->>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -80,18 +64,6 @@ a {
     transition: color 0.3s ease;
 }
 
-.social-icon:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    color: #0077b5; /* LinkedIn blue on hover */
-=======
-    color: #000000;
->>>>>>> develop
-=======
-    color: #000000;
->>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
-}
-
 .email-section {
     margin-top: 20px;
     text-align: center;
@@ -103,11 +75,11 @@ a {
 }
 
 .bio {
-    font-size: 1rem;        
-    font-weight: 400;        
+    font-size: 1rem;
+    font-weight: 400;
     margin-bottom: 20px;
     line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif;                
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .button-container {
@@ -117,54 +89,29 @@ a {
 }
 
 .btn {
-<<<<<<< HEAD
-<<<<<<< HEAD
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-=======
-=======
->>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px 20px;
     background-color: white !important;
-    border-radius: 5px;
-    font-size: 0.9em;
+    border: 1px solid #000;
     transition: background-color 0.3s, transform 0.3s;
-    border: #000000;
-    border-width: 1rem;
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
 }
 
 .btn:hover {
     transform: scale(1.05);
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-
-/* Responsive Adjustments */
-=======
-=======
->>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
     background-color: #333 !important;
     color: white !important;
+    text-decoration: none;
 }
 
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .content-container {
         flex-direction: column;
         align-items: center;
-        padding-top: 120vh;
+    }
+
+    .home {
+        padding: 100vh 0 !important;
     }
 
     .left-section {
@@ -173,7 +120,7 @@ a {
     }
 
     .bio {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .btn {
@@ -182,9 +129,13 @@ a {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .content-container {
         padding: 10px;
+    }
+
+    .home {
+        padding: 80vh 0 !important;
     }
 
     .profile-photo {

@@ -5,10 +5,13 @@
     align-items: center;
     height: 100vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 =======
+=======
+>>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
     font-family: Arial, sans-serif;
 }
 a {
@@ -20,7 +23,10 @@ a {
     color: red;
 }
 
+<<<<<<< HEAD
 >>>>>>> develop
+=======
+>>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
 
 /* Container for the two sections */
 .content-container {
@@ -31,10 +37,14 @@ a {
     width: 80%;
     max-width: 1200px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: #fff;
 =======
     background-color: #f4f4f9;
 >>>>>>> develop
+=======
+    background-color: #f4f4f9;
+>>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -72,10 +82,14 @@ a {
 
 .social-icon:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: #0077b5; /* LinkedIn blue on hover */
 =======
     color: #000000;
 >>>>>>> develop
+=======
+    color: #000000;
+>>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
 }
 
 .email-section {
@@ -104,12 +118,15 @@ a {
 
 .btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
 =======
+=======
+>>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
     display: inline-block;
     margin-right: 10px;
     padding: 10px 20px;
@@ -119,21 +136,30 @@ a {
     transition: background-color 0.3s, transform 0.3s;
     border: #000000;
     border-width: 1rem;
+<<<<<<< HEAD
 >>>>>>> develop
+=======
+>>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
 }
 
 .btn:hover {
     transform: scale(1.05);
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 /* Responsive Adjustments */
 =======
+=======
+>>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
     background-color: #333 !important;
     color: white !important;
 }
 
+<<<<<<< HEAD
 >>>>>>> develop
+=======
+>>>>>>> 7bc346ee8a765a9ae4b18fb9cf16e784c8200f50
 @media (max-width: 768px) {
     .content-container {
         flex-direction: column;

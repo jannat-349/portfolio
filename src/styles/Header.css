@@ -20,7 +20,7 @@
 
 .fancy-name {
     font-family: 'Dancing Script', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     font-style: italic;
     letter-spacing: 2px;
@@ -62,6 +62,7 @@
 
 }
 
+
 @media (max-width: 1024px) {
     .nav-menu {
         display: none;
@@ -76,6 +77,7 @@
         width: 200px;
         gap: 10px;
     }
+
     .fancy-name {
         font-size: 2rem;
     }
@@ -109,6 +111,7 @@
     .fancy-name {
         font-size: 1.5rem;
     }
+
     .hamburger-menu {
         font-size: 2rem;
     }
